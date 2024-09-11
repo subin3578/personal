@@ -34,7 +34,7 @@ public class ProductRepositoryTest {
 
     @Test
     public void selectProducts() {
-        List<Product> products = productRepository.selectProducts();
+        List<Product> products = productRepository.findAll();
         System.out.println("---------------------------products----------------------------");
         for (Product product : products) {
             System.out.println(product);

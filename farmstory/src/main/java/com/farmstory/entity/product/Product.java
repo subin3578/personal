@@ -1,8 +1,11 @@
 package com.farmstory.entity.product;
 
+import com.farmstory.dto.ProductDTO;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Getter
 @NoArgsConstructor
@@ -25,10 +28,32 @@ public class Product {
     private String img1;
     private String img2;
     private String img3;
+
+
     @CreationTimestamp
+    @Column(updatable = false)
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private String regdate;
     private String etc;
 
     private String uid;
 
+
+    public ProductDTO toDTO(){
+        return ProductDTO.builder()
+                .prodNo(prodNo)
+                .prodName(prodName)
+                .type(type)
+                .price(price)
+                .discount(discount)
+                .deliveryfee(deliveryfee)
+                .stock(stock)
+                .img1(img1)
+                .img2(img2)
+                .img3(img3)
+                .regdate(regdate)
+                .etc(etc)
+                .uid(uid)
+                .build();
+    }
 }
