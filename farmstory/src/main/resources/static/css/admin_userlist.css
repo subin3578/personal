@@ -12,8 +12,6 @@ address{font-style: normal;}
 
 /* hyper link */
 a, a:link, a:visited, a:active, a:hover{text-decoration: none; color: inherit;}
- 
-
 
 /* wrapper */
 #wrapper{
@@ -25,7 +23,7 @@ a, a:link, a:visited, a:active, a:hover{text-decoration: none; color: inherit;}
 header{
     width: 100%;
     height: auto;
-    background: url(../admin/images/admin_bg.jpg);
+    background: url(../adminImages/admin_bg.jpg);
     background-position: bottom;
 }
 
@@ -71,9 +69,8 @@ header{
 
 main{
     width: 100%;
-    height: auto;
+    height: 658px;
 }
-
 
 /* mainIn */
 .mainIn{
@@ -95,9 +92,9 @@ main{
 /* aside */
 
 main .aside{
-  
-   width: 176px; 
-   height: 400px;
+
+    width: 176px;
+    height: 400px;
 }
 
 aside div{
@@ -364,14 +361,15 @@ main .section{
 footer{
     width: 100%;
     height: auto;
+    color: #ffffff;
+    background:  #353535;
 }
 
 .fIn{
     width: 980px;
     height: 41px;
-    background:  #353535;
     margin: 0 auto;
-    color: #ffffff;
+
 
 }
 

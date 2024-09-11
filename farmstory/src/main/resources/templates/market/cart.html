@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>장바구니</title>
-    <link rel="shortcut icon" href="../images/fav.ico" type="image/x-icon"> 
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/style_cart.css">
+    <link rel="shortcut icon" th:href="@{/images/fav.ico}" type="image/x-icon">
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+    <link rel="stylesheet" th:href="@{/css/style_cart.css}">
 </head>
 <body>
 
@@ -138,7 +136,7 @@
                                 <td>22,000</td>
                             </tr>
                         </table><!-- .tb2 -->
-                        <button class="btn_order"><a href="#">주문하기</a></button>
+                        <button class="btn_order"><a th:href="@{/market/order}">주문하기</a></button>
                     </div><!-- .order_final -->
 
                 </div><!-- .articleIn -->

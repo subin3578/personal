@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>상품상세보기</title>
-    <link rel="shortcut icon" href="../images/fav.ico" type="image/x-icon"> 
+    <link rel="shortcut icon" href="../images/fav.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/style_market_view.css">
 </head>
 <body>
@@ -43,7 +41,7 @@
                             <img src="../images/sub_page_nav_ico.gif" alt="메뉴">
                             <span>HOME </span>
                             <span>장보기 </span>
-                            <strong>장보기</strong> 
+                            <strong>장보기</strong>
                         </p>
                     </nav>
                     <h3>기본정보</h3>
@@ -79,7 +77,7 @@
                                 </tr>
                             </table>
                              <div class="buttons">
-                                <a href="#" type="button" class="add_to_cart">장바구니</a>
+                                <a th:href="@{/market/cart}" type="button" class="add_to_cart">장바구니</a>
                                 <a href="#"  type="button" class="buy_now">바로구매</a>
                             </div> <!-- .buttons -->
                         </div> <!-- .product_info -->
@@ -116,7 +114,7 @@
                 </article><!-- .article -->
             </section>
         </main><!-- #main -->
-        
+
         <footer id="footer">
             <div class="footerIn cf">
             <img src="../images/footer_logo.png" alt="farmStory footer" class="flogo">

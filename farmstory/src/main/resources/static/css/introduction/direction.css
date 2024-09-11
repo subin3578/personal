@@ -20,7 +20,7 @@
     
 }
 /* lnb a 개별값 */
-.cate_lnb li:nth-child(1) a{top:107px; background-image: url('../../images/sub_cate1_lnb1.png');}
+.cate_lnb li:nth-child(1) a{top:107px; background-image: url('../../images/sub_cate1_lnb1.png')}
 .cate_lnb li:nth-child(2) a{top:136px; background-image: url('../../images/sub_cate1_lnb2.png');}
 
 

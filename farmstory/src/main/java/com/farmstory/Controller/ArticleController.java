@@ -16,9 +16,9 @@ public class ArticleController {
         return "/community/notice";
     }
     // event
-    @GetMapping("/event/info")
-    public String info() {
-        return "/event/info";
+    @GetMapping("/event/event")
+    public String event() {
+        return "/event/event";
     }
 
 }
