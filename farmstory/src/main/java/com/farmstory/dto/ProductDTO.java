@@ -6,6 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.processing.Generated;
 import java.util.List;
@@ -34,7 +35,8 @@ public class ProductDTO {
 
     private String uid;
 
-
+    // 추가필드
+    private List<MultipartFile> images;
 
     public Product toEntity(){
         return Product.builder()

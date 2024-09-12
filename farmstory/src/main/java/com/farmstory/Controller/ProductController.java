@@ -25,8 +25,9 @@ public class ProductController {
         return "/admin/product/register";
     }
     @PostMapping("/admin/product/register")
-    public String productRegister(ProductDTO productDTO, MultipartFile[] images) {
-        productService.insertProduct(productDTO, images);
+    public String productRegister(ProductDTO productDTO, MultipartFile image) {
+
+        productService.insertProduct(productDTO,image);
         return "redirect:/admin/product/list";
     }
     @GetMapping("/admin/product/list")
