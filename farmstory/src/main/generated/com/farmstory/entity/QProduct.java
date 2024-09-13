@@ -1,4 +1,4 @@
-package com.farmstory.entity.product;
+package com.farmstory.entity;
 
 import static com.querydsl.core.types.PathMetadataFactory.*;
 
@@ -15,7 +15,7 @@ import com.querydsl.core.types.Path;
 @Generated("com.querydsl.codegen.DefaultEntitySerializer")
 public class QProduct extends EntityPathBase<Product> {
 
-    private static final long serialVersionUID = 226693601L;
+    private static final long serialVersionUID = 1617704160L;
 
     public static final QProduct product = new QProduct("product");
 
@@ -37,13 +37,11 @@ public class QProduct extends EntityPathBase<Product> {
 
     public final NumberPath<Integer> prodNo = createNumber("prodNo", Integer.class);
 
-    public final StringPath regdate = createString("regdate");
+    public final DateTimePath<java.time.LocalDateTime> regdate = createDateTime("regdate", java.time.LocalDateTime.class);
 
     public final NumberPath<Integer> stock = createNumber("stock", Integer.class);
 
     public final StringPath type = createString("type");
-
-    public final StringPath uid = createString("uid");
 
     public QProduct(String variable) {
         super(Product.class, forVariable(variable));

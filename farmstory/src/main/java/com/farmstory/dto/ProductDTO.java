@@ -1,14 +1,10 @@
 package com.farmstory.dto;
 
-import com.farmstory.entity.product.Product;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.farmstory.entity.Product;
 import lombok.*;
-import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.annotation.processing.Generated;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Getter
@@ -30,10 +26,10 @@ public class ProductDTO {
     private String img1;
     private String img2;
     private String img3;
-    private String regdate;
+    private LocalDateTime regdate;
     private String etc;
 
-    private String uid;
+   // private String uid;
 
     // 추가필드
     private List<MultipartFile> images;
@@ -52,7 +48,6 @@ public class ProductDTO {
                 .img3(img3)
                 .regdate(regdate)
                 .etc(etc)
-                .uid(uid)
                 .build();
     }
 }

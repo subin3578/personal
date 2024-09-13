@@ -1,6 +1,7 @@
 package com.farmstory.Controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 // 지현님&상훈님 - market
@@ -9,6 +10,7 @@ public class CartController {
 
     @GetMapping("/market/view")
     public String view() {
+
         return "/market/view";
     }
     @GetMapping("/market/list")

@@ -32,7 +32,8 @@
                                     </thead>
                                     <tbody>
                                         <tr th:each="product:${products}">
-                                            <td><img th:src="@{/private/var/folders/sw/ybshp0b52h11w7kw3blrbz240000gn/T/tomcat.8081.7979731255351636581/work/Tomcat/localhost/farmstory/uploads/{filename}(filename=${product.img1})}" id="product_img1" alt="샘플 이미지"></td>
+                                          <td><img th:src="@{'/MainImage/' + ${product.img1}}" id="product_img1" alt="샘플 이미지"></td>
+
                                             <td>[[${product.prodNo}]]</td>
                                             <td>[[${product.prodName}]]</td>
                                             <td>[[${product.type}]]</td>

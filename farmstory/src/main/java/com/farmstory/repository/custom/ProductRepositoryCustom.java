@@ -1,7 +1,6 @@
 package com.farmstory.repository.custom;
 
-import com.farmstory.entity.product.Product;
-import org.springframework.web.multipart.MultipartFile;
+import com.farmstory.entity.Product;
 
 import java.util.List;
 

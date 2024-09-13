@@ -1,9 +1,7 @@
 package com.farmstory.Controller;
 
-import com.farmstory.entity.product.Product;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.multipart.MultipartFile;
 
 @Controller
 public class AdminController {
