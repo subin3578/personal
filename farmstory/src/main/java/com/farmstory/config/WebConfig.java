@@ -10,6 +10,9 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/MainImage/**")
-                .addResourceLocations("file:///C:/Users/lotte4/Desktop/Spring/uploads/MainImage/");
+                 // 윈도우 경로
+                 .addResourceLocations("file:///C:/Users/lotte4/Desktop/Spring/uploads/MainImage/");
+                // 맥 경로
+               // .addResourceLocations("file:///Users/hwangsubin/Desktop/farm/uploads/MainImage/");
     }
 }
